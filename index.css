@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-left: 125px;
+  margin-right: 125px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#tabs button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#tabs button:hover {
+  color: white;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 230px;
+  background-color: white;
+  padding: 16px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.card-background-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 1px;
+}
+
+.image {
+  height: 270px;
+}
+
+.div-heading-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-heading {
+  display: inline-block;
+  margin-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  font-size: 12px;
+  border-radius: 2px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.span::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.span {
+  margin-left: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.vendor {
+  margin-right: 10px;
+}
+
+.card-footer-container {
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.discount {
+  text-decoration: line-through;
+  font-weight: 100;
+}
+
+.offers {
+  color: red;
+}
+
+.add {
+  width: 100%;
+  border: none;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  #tabs {
+    flex-direction: column;
+    align-self: center;
+  }
+}
